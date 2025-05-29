@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>AZURA_FPS</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-image: url('pics/657c0493193524d400dcf7404a1411fb.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #4c4c4c;
+            color: rgb(248, 248, 248);
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 10px;
+        }
+
+        .social-btn i {
+            margin-right: 8px;
+        }
+
+        .social-btn:hover {
+            background-color: #3e3e3e;
+        }
+
+        .latest-post, .music-player {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .music-player {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .music-player img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .music-info {
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <div class="profile-card">
@@ -13,104 +70,40 @@
                 <img src="pics/684a5a33033647121b6216192fbd29e5.jpg" alt="Background" class="background">
                 <img src="pics/fc885112db4f35a966f378ff4741c49a.jpg" alt="Profile" class="profile-pic">
             </div>
+
             <div class="info">
                 <h1>AZURA_FPS</h1>
                 <div class="badges">
                     <span class="badge"></span>
                     <span class="badge"></span>
-                </div>Partenair: https://www.instant-gaming.com/?igr=gamer-2526e2
+                </div>
+                <p>Partenaire : <a href="https://www.instant-gaming.com/?igr=gamer-2526e2" target="_blank">Instant Gaming</a></p>
                 <p class="quote">.</p>
             </div>
+
             <div class="socials">
-                <head>
-                    <link href="AZURA_FPS.github.io" rel="stylesheet">
-                    <style>
-                        body {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            flex-direction: column;
-                            height: 100vh;
-                            margin: 0;
-                            background-image: url('pics/657c0493193524d400dcf7404a1411fb.jpg');
-                            background-size: cover;
-                            background-position: center;
-                        }
+                <!-- Social Buttons -->
+                <a href="https://www.instagram.com/azura_boxed_you?igsh=MTMxYW1ramJqd244NQ%3D%3D&utm_source=qr" class="social-btn" target="_blank">
+                    <i class="bx bxl-instagram"></i> Instagram
+                </a> 
 
-                        .social-btn {
-                            display: inline-flex;
-                            align-items: center;
-                            padding: 10px 20px;
-                            font-size: 18px;
-                            text-decoration: none;
-                            background-color: #4c4c4c;
-                            color: rgb(248, 248, 248);
-                            border-radius: 5px;
-                            transition: background-color 0.3s;
-                            margin: 10px;
-                        }
+                <a href="https://discord.gg/typbEHBY3K" class="social-btn" target="_blank">
+                    <i class="bx bxl-discord"></i> Discord
+                </a>
 
-                        .social-btn i {
-                            margin-right: 8px;
-                        }
+                <a href="https://www.tiktok.com/@azura_fps" class="social-btn" target="_blank">
+                    <i class="bx bxl-tiktok"></i> TikTok
+                </a>
+            </div>
 
-                        .social-btn:hover {
-                            background-color: #3e3e3e;
-                        }
-
-                        .latest-post, .music-player {
-                            text-align: center;
-                            margin-top: 20px;
-                        }
-
-                        .music-player {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 20px;
-                        }
-
-                        .music-player img {
-                            width: 200px;
-                            height: 200px;
-                            object-fit: cover;
-                        }
-
-                        .music-info {
-                            text-align: left;
-                        }
-                    </style>
-                </head>
-
-                <body>
-                    <!-- Social Buttons -->
-                    <div>
-                        <!-- Instagram Button -->
-                        <a href="https://www.instagram.com/azura_boxed_you?igsh=MTMxYW1ramJqd244NQ%3D%3D&utm_source=qr" class="social-btn">
-                            <i class="bx bxl-instagram"></i> Instagram
-                        </a> 
-
-                        <!-- Discord Button -->
-                        <a href="https://discord.gg/typbEHBY3K" class="social-btn">
-                            <i class="bx bxl-discord"></i> Discord
-                        </a>
-                    </div>
-                   
-                    <!-- Tiktok Button -->
-                    <a href="https://www.tiktok.com/@azura_fps" class="social-btn">
-                        <i class="bx bxl-tiktok"></i> TikTok
-                    </a>
-
-                    <!-- Music Player Section -->
-                    <iframe style="border-radius:12px" 
+            <!-- Music Player -->
+            <div class="music-player">
+                <iframe style="border-radius:12px" 
                     src="https://open.spotify.com/embed/track/2A6XI4w9IasxpX9tVGgcHs?utm_source=generator" 
                     width="100%" height="152" frameBorder="0" allowfullscreen="" 
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                     loading="lazy">
-                  </iframe>                  
-                        </div>
-                    </div>
-                </body>
+                </iframe>
             </div>
         </div>
     </div>
